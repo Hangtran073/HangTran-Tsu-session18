@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <style>
+        .container {
+            padding: 10px;
+            background: #F0F0F0;
+            width: 50%;
+        }
+
+        #text {
+            padding: 10px;
+            margin: 20px 0;
+            width: 95%;
+            border-radius: 5px;
+            border: 1px solid gray;
+        }
+
+        #btn {
+            background: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 15px;
+            width:50px;
+        }
+        #btn.clear{
+            background:rgb(245, 18, 94);
+        }
+
+       
+    </style>
+
+    <body>
+        <div class="container">
+            <input type="text" id="text" placeholder="Nhập ở đây..."><br />
+            <table class="box">
+                <tr>
+                    <td><button id="btn" onclick="setValue('A')">A</button></td>
+                    <td><button id="btn" onclick="setValue('B')">B</button></td>
+                    <td><button id="btn" onclick="setValue('C')">C</button></td>
+                    <td><button id="btn" onclick="setValue('D')">D</button></td>
+                    <td><button id="btn" onclick="setValue('E')">E</button></td>
+                    <td><button id="btn" onclick="setValue('F')">F</button></td>
+                    <td><button id="btn" onclick="setValue('G')">G</button></td>
+                    <td><button id="btn" onclick="setValue('H')">H</button></td>
+                    <td><button id="btn" onclick="setValue('I')">I</button></td>
+                    <td><button id="btn" onclick="setValue('J')">J</button></td>
+                </tr>
+                <tr>
+                    <td><button id="btn" onclick="setValue('K')">K</button></td>
+                    <td><button id="btn" onclick="setValue('L')">L</button></td>
+                    <td><button id="btn" onclick="setValue('M')">M</button></td>
+                    <td><button id="btn" onclick="setValue('N')">N</button></td>
+                    <td><button id="btn" onclick="setValue('O')">O</button></td>
+                    <td><button id="btn" onclick="setValue('P')">P</button></td>
+                    <td><button id="btn" onclick="setValue('Q')">Q</button></td>
+                    <td><button id="btn" onclick="setValue('R')">R</button></td>
+                    <td><button id="btn" onclick="setValue('S')">S</button></td>
+                    <td><button id="btn" onclick="setValue('T')">T</button></td>
+
+                </tr>
+                <tr>
+                    <td><button id="btn" onclick="setValue('U')">U</button></td>
+                    <td><button id="btn" onclick="setValue('V')">V</button></td>
+                    <td><button id="btn" onclick="setValue('W')">W</button></td>
+                    <td><button id="btn" onclick="setValue('X')">X</button></td>
+                    <td><button id="btn" onclick="setValue('Y')">Y</button></td>
+                    <td><button id="btn" onclick="setValue('Z')">Z</button></td>
+                    <td><button id="btn" class="clear" onclick="clearInput()">Xóa</button></td>
+                </tr>
+
+
+            </table>
+
+        </div>
+        <script>
+
+            function setValue(text) {
+                console.log("click");
+                document.getElementById("text").value += text;
+
+            }
+            function clearInput() {
+                console.log("click");
+                document.getElementById("text").value = "";
+
+            }
+
+        </script>
+    </body>
+
+</html>
