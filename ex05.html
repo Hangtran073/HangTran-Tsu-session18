@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .container {
+                border: 10px solid rgb(227, 219, 219);
+                border-radius: 5px;
+                padding: 10px 20px;
+                width: 50%;
+            }
+
+            h1 {
+                text-align: center;
+            }
+
+            #btn-student {
+                background: blue;
+                color: white;
+                border-radius: 5px;
+                border: none;
+                padding: 10px;
+            }
+
+            input {
+                padding: 10px;
+                border: 1px solid gray;
+                border-radius: 5px;
+                width: 200px;
+            }
+
+            td {
+                padding: 10px 50px 5px 0;
+
+            }
+
+            table {
+                border-collapse: collapse;
+            }
+
+            tr {
+                border-bottom: 1px solid gray;
+            }
+
+            .line1 {
+                font-weight: bold;
+                border-bottom: 1px solid gray;
+
+            }
+
+          
+
+            
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Quản lý danh sách sinh viên</h1>
+            <input id="name" type="text" placeholder="Tên sinh viên">
+            <input id="age" type="number" placeholder="Tuổi"><br /><br />
+            <input id="class" type="text" placeholder="Lớp">
+            <button id="btn-student" onclick="addStudent()">Thêm sinh viên</button><br /><br />
+            <input id="search" type="text" oninput="findStudent()" placeholder="Tìm kiếm sinh viên...">
+            <table>
+                <thead>
+                    <tr class="line1">
+                        <td>Tên</td>
+                        <td>Tuổi</td>
+                        <td>Lớp</td>
+                        <td colspan="2">Hành động</td>
+                    </tr>
+                </thead>
+                <tbody id="list">
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <script src="./ex05.js"></script>
+    </body>
+
+</html>
